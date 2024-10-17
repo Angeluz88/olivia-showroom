@@ -11,30 +11,32 @@ const NavBar = () => {
    }
   return (
     <>
-    <nav className='bg-pink-300'>
+    <nav className='bg-white'>
         <div className='max-w-7 mx-auto px4 sm:px6 lg:px-8'>
             <div className='flex items-center justify-between h-16'>
                 <div className='flex items-center'>
                     <div className='flex-shrink-0'>
                      <a href="/">
-                     <img src="/Olivia.png"
-                      width={"100"}
-                      height={"100"}
-                      alt='logo'/></a>
+                     <Image
+                       src="/Olivia.png"
+                       width={50}
+                       height={50}
+                       alt="Picture of the author"
+                      /></a>
                     </div>
                 </div>
                 <div className='hidden md:block'>
                   <div className='ml-4 flex  items-center space-x-4'>
-                    <a href="/" className='text-white hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Home</a>
-                    <a href="/" className='text-white hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Sales!</a>
-                    <a href="/" className='text-white hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Perfil</a>
-                    <a href="/" className='text-white hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Carrito</a>
-                    <a href="/" className='text-white hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Salir</a>
+                    <a href="/" className='text-pink-300 hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Home</a>
+                    <a href="/" className='text-pink-300 hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Sales!</a>
+                    <a href="/" className='text-pink-300 hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Perfil</a>
+                    <a href="/" className='text-pink-300 hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Carrito</a>
+                    <a href="/" className='text-pink-300 hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Salir</a>
                   </div>
                 </div>
                 <div className='md:hidden flex items-center'>
                   <button
-                  className='inline-fex items-center justify-center p-2 rounded-md text-white hover:text-pink-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-300' onClick={toggleNavBar}>
+                  className='inline-fex items-center justify-center p-2 rounded-md text-pink-300 hover:text-pink-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-300' onClick={toggleNavBar}>
                     {isClick ? (
                       <svg
                       className='h-6 w-6'
@@ -67,11 +69,11 @@ const NavBar = () => {
         {isClick && (
           <div className='md:hidden'>
             <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-            <a href="/" className='text-white hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Home</a>
-                    <a href="/" className='text-white block hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Sales!</a>
-                    <a href="/" className='text-white block hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Perfil</a>
-                    <a href="/" className='text-white block hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Carrito</a>
-                    <a href="/" className='text-white block hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Salir</a>
+            <a href="/" className='text-pink-300 hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Home</a>
+                    <a href="/" className='text-pink-300 block hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Sales!</a>
+                    <a href="/" className='text-pink-300 block hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Perfil</a>
+                    <a href="/" className='text-pink-300 block hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Carrito</a>
+                    <a href="/" className='text-pink-300 block hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Salir</a>
             </div>
           </div>
         )}
