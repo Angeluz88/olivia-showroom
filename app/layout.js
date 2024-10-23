@@ -1,6 +1,8 @@
 
 import "./globals.css";
-import NavBar from "./components/particles/navBar";
+import NavBar from "./components/particles/NavBar";
+import Button from "./components/atoms/Button";
+
 
 
 
@@ -15,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <NavBar />
+        <Button />
         {children}
       </body>
     </html>

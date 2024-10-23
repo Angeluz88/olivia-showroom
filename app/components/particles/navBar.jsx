@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
+import SearchInput from '../molecules/SearchInput';
 
 
 
@@ -12,7 +13,7 @@ const NavBar = () => {
   return (
     <>
     <nav className='bg-white'>
-        <div className='max-w-7 mx-auto px4 sm:px6 lg:px-8'>
+        <div className='max-w-8xl mx-auto px4 sm:px6 lg:px-8'>
             <div className='flex items-center justify-between h-16'>
                 <div className='flex items-center'>
                     <div className='flex-shrink-0'>
@@ -23,9 +24,10 @@ const NavBar = () => {
                        height={50}
                        alt="Picture of the author"
                       /></a>
-                    </div>
+                    </div>                    
                 </div>
-                <div className='hidden md:block'>
+                <SearchInput />
+                <div className='hidden md:block'>                
                   <div className='ml-4 flex  items-center space-x-4'>
                     <a href="/" className='text-pink-300 hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Home</a>
                     <a href="/" className='text-pink-300 hover:bg-pink-500 hover:text-pink-300 rounded-md p-2'>Sales!</a>
@@ -82,4 +84,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar
+export default NavBar;
